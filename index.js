@@ -11,7 +11,7 @@ request.get({
     let $ = cheerio.load(body);
     const author = $('a[class="auteurfbnaam"]').contents().first().text();
     const  kata = $('q[class="fbquote"]').contents().first().text();
-    var getkata = kata +"\n </br>"+ author;
+    var getkata = kata +"\n ~"+ author;
     console.log(getKata);
 });
 
